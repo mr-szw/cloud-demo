@@ -1,0 +1,14 @@
+
+Zuul-test Path
+        http://127.0.0.1:20880/zuul/webApi/test?test=23
+
+
+webApi-test Path
+    http://127.0.0.1:8080/webApi/test?test=23
+
+
+
+
+
+
+

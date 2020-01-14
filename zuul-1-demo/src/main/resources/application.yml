@@ -1,0 +1,12 @@
+server:
+  port: 20880
+
+
+spring:
+  application:
+    name: zuul-demo
+zuul:
+  routes:
+    webApi.path = /webApi/**
+    webApi.url = http://127.0.0.1:8080/
+  prefix: zuul

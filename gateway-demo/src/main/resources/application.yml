@@ -1,4 +1,34 @@
+server:
+  port: 20881
+
+
+
 spring:
-  service:
-    port: 80880
-    name: 123
+  application:
+    name: gateway-demo
+
+
+
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: webApi
+          uri: http://127.0.0.1:8080/
+          #谓语、断言：路由转发的判断条件，常见方式：Path、Query、Method、Header， 多个规则是与的关系都通过才执行
+          predicates:
+            #配置的规则是Path 满足规则则进行路由
+            - Path=/webApi/**
+            #在某时间之后才路由
+            - After=2019-05-01T00:00:00+08:00[Asia/Shanghai]
+            #满足 host是**.com才路由
+            - Host=**.com
+            #Post 请求才路由
+            - Method=POST
+            #请求参数需要包含xxx 且值为zzz 可以仅校验是否有参数，不关心值（不配置，zzz）,Cookie和Header同
+            - Query=xxx,zzz
+          filters:
+            - StripPrefix: 1

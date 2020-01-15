@@ -10,7 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gateway-demo</artifactId>
-    <packaging>war</packaging>
 
     <name>gateway-demo</name>
     <!-- FIXME change it to the project's website -->
@@ -23,6 +22,15 @@
     </properties>
 
     <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-gateway -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <version>2.1.2.RELEASE</version>
+        </dependency>
+
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -30,6 +38,10 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+
+
+
 
 
     <build>

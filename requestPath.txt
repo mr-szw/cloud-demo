@@ -4,7 +4,7 @@ Zuul-test Path
 
 
 webApi-test Path
-    http://127.0.0.1:8080/webApi/test?test=23
+    http://127.0.0.1:8081/webApi/test?test=23
 
 
 

@@ -1,12 +1,17 @@
 server:
   port: 20880
 
+#日志
+logging:
+  config: classpath:logconfig/logback.xml
+  path: /home/sinbad/work/workspace/logs/zuul-2-demo
+
 
 spring:
   application:
     name: zuul-demo
 zuul:
+  servlet-path: /
   routes:
-    webApi.path = /webApi/**
-    webApi.url = http://127.0.0.1:8080/
-  prefix: zuul
+    webApi.path: /**
+    webApi.url: http://127.0.0.1:8081/

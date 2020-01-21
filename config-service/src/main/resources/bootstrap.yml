@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Dawei21/cloud-demo.git/cloud-demo/
+          username: Dawei21
+          password:
+          default-label: master
+          search-paths: repository-config

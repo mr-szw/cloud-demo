@@ -1,0 +1,6 @@
+data:
+  env: config-euraka-dev
+  datasource:
+    datasource-demo:
+      username: root
+      password: 123456

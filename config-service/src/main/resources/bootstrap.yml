@@ -6,8 +6,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Dawei21/cloud-demo.git/cloud-demo/
-          username: Dawei21
-          password:
+          uri: https://github.com/Dawei21/cloud-demo/
           default-label: master
           search-paths: repository-config

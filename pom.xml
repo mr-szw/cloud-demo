@@ -31,6 +31,7 @@
 		<module>zuul-2-demo</module>
 		<module>web-api-demo</module>
 		<module>config-service</module>
+		<module>config-client</module>
 
 
 	</modules>

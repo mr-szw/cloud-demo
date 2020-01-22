@@ -2,5 +2,5 @@ data:
   env: config-clinet-test
   datasource:
     datasource-demo:
-      username: root
+      username: root123
       password: 123456

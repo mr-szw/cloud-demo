@@ -3,10 +3,9 @@ server:
 
 spring:
   application:
-    name: config-clent
+    name: config-client
   profiles:
     active: test
-
 
 
 
@@ -16,3 +15,14 @@ data:
     datasource-demo:
       username: NaN
       password: NaN
+
+
+#监控管理
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"

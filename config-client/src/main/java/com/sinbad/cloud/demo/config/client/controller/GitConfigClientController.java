@@ -5,8 +5,9 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+//用于刷新数据更新后会刷新注入的资源
 @RefreshScope
+@RestController
 public class GitConfigClientController {
 	
 	

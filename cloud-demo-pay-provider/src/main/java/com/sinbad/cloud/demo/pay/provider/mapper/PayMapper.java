@@ -10,7 +10,7 @@ import com.sinbad.cloud.demo.pay.provider.entry.po.PayPo;
 @Mapper
 public interface PayMapper {
 
-	int insertPayData(PayPo payPo);
+	long insertPayData(PayPo payPo);
 
 	PayPo getPayDataById(long payId);
 }

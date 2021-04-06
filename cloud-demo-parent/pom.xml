@@ -13,6 +13,7 @@
 	<modules>
 		<module>../cloud-demo-common</module>
 		<module>../cloud-demo-pay-provider</module>
+		<module>../cloud-demo-order-consumer</module>
 	</modules>
 	<packaging>pom</packaging>
 
@@ -131,6 +132,11 @@
 				<version>${spring-boot.version}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-devtools</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
 
 			<!-- AOP -->
 			<dependency>

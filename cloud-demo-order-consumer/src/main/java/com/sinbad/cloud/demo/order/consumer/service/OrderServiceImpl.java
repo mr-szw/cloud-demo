@@ -5,8 +5,9 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import com.sinbad.cloud.demo.common.entry.PayVo;
 import com.sinbad.cloud.demo.common.suppert.RtResponse;
-import com.sinbad.cloud.demo.order.consumer.entry.PayVo;
+
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -17,14 +18,13 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 public class OrderServiceImpl {
 
-	private static final String PAY_SERVICE = "http://127.0.0.1:8081";
+	//private static final String PAY_SERVICE = "http://127.0.0.1:8001";
+	private static final String PAY_SERVICE = "http://PAY-PROVIDER";
 
 	@Resource
 	private RestTemplate restTemplate;
 
-	public RtResponse<Long> createPayForOrder(String serial) {
-		PayVo payVo = new PayVo();
-		payVo.setSerial(serial);
+	public RtResponse<Long> createPayForOrder(PayVo payVo) {
 
 		RtResponse rtResponse = restTemplate.postForObject(PAY_SERVICE + "/pay/create", payVo,
 				RtResponse.class);

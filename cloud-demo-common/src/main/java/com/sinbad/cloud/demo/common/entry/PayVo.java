@@ -1,4 +1,4 @@
-package com.sinbad.cloud.demo.pay.provider.entry.vo;
+package com.sinbad.cloud.demo.common.entry;
 
 import java.io.Serializable;
 

@@ -13,10 +13,14 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<name>cloud-demo-pay-provider</name>
 
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
 	<dependencies>
+
+		<!-- eureka-client -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

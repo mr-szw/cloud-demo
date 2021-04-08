@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sinbad.cloud.demo.common.entry.PayVo;
 import com.sinbad.cloud.demo.common.suppert.RtResponse;
-import com.sinbad.cloud.demo.order.consumer.entry.PayVo;
+
 import com.sinbad.cloud.demo.order.consumer.service.OrderServiceImpl;
 
 import lombok.extern.slf4j.Slf4j;
@@ -25,9 +26,9 @@ public class OrderController {
 	private OrderServiceImpl orderService;
 
 	@PostMapping(value = "/create")
-	public RtRsponse<Long> createPayForOrder(String serial) {
-		log.info("Create pay payVo={}", serial);
-		return orderService.createPayForOrder(serial);
+	public RtResponse<Long> createPayForOrder(PayVo payVo) {
+		log.info("Create pay payVo={}", payVo);
+		return orderService.createPayForOrder(payVo);
 
 	}
 

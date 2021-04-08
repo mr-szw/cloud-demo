@@ -12,6 +12,7 @@
 	<version>1.0-SNAPSHOT</version>
 	<modules>
 		<module>../cloud-demo-common</module>
+		<module>../cloud-demo-eureka-server</module>
 		<module>../cloud-demo-pay-provider</module>
 		<module>../cloud-demo-order-consumer</module>
 	</modules>

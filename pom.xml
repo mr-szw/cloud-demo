@@ -32,9 +32,6 @@
 		<module>web-api-demo</module>
 		<module>config-service</module>
 		<module>config-client</module>
-		<module>cloud-demo-parent</module>
-
-
 	</modules>
 
 

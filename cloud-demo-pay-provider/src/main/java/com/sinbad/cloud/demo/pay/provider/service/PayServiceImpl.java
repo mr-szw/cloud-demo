@@ -5,9 +5,10 @@ import javax.annotation.Resource;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
+import com.sinbad.cloud.demo.common.entry.PayVo;
 import com.sinbad.cloud.demo.common.utils.GsonUtil;
 import com.sinbad.cloud.demo.pay.provider.entry.po.PayPo;
-import com.sinbad.cloud.demo.pay.provider.entry.vo.PayVo;
+
 import com.sinbad.cloud.demo.pay.provider.mapper.PayMapper;
 
 import lombok.extern.slf4j.Slf4j;

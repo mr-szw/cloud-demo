@@ -74,7 +74,7 @@
 		<!-- 加密 -->
 		<commons-codec-version>1.14</commons-codec-version>
 
-		<httpcomponents-httpclient-version>4.5.12</httpcomponents-httpclient-version>
+		<httpcomponents-httpclient-version>4.5.13</httpcomponents-httpclient-version>
 		<!-- 版本要和feign=core一致 -->
 		<feign-httpclient-version>10.7.4</feign-httpclient-version>
 
